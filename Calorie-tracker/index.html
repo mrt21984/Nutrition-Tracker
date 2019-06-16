@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calories</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="pt-4 row">
+            <h2 class="col-8 offset-2">Calorie Calculator</h2>
+        </header>
+
+        <main class="mt-2">
+
+            <section class="" id="inputDiv">
+                <form action="" id="calorie-inputs" class="row">
+                    <input type="number" id="fatGrams" class="col-2 form-control">
+                    <input type="number" id="proteinGrams" class="col-2 form-control offset-1">
+                    <input type="number" id="carbGrams" class="col-2 form-control offset-1">
+                    <input type="number" id="servings" class="col-2 form-control offset-2">
+
+                    <input type="submit" value="Calculate" class=" btn btn-primary btn-block mt-3" id="subBtn">
+                </form>
+            </section>
+
+            <section class="p-2 mt-2" id="calorieDiv">
+
+                <h2 class="text-center">Calores</h2>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fat</th>
+                            <th>protein</th>
+                            <th>Carbs</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calTable">
+
+                    </tbody>
+                </table>
+            </section>
+            <section class="col-12 p-2 mt-2" id="percentDiv">
+                <h2 class="text-center">Calorie Percent</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fat %</th>
+                            <th>protein % </th>
+                            <th>Carbs %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="percentTable">
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="calories.js"></script>
+</body>
+
+</html>
